@@ -6,33 +6,33 @@ inquirer
   .prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'pTitle',
+      message: 'What is your project title?',
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'pDescription',
+      message: 'Please enter your project description',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'pInstallation',
+      message: 'Please enter installation instructions',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'pUsageInfo',
+      message: 'Please enter the usage information',
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
+      name: 'pContrib',
+      message: 'Please enter the contribution instructions',
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'pTests',
+      message: 'Please enter the projects testing guidelines',
     },
   ])
   .then((answers) => {
