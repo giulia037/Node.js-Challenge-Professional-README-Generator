@@ -35,13 +35,6 @@ inquirer
       message: 'Please enter the projects testing guidelines',
     },
   ])
-  .then((answers) => {
-    const htmlPageContent = generateHTML(answers);
-
-    fs.writeFile('generatedIndex.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-  });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
